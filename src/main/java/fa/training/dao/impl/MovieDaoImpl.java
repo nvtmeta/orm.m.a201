@@ -22,10 +22,8 @@ public class MovieDaoImpl implements MovieDao {
     public List<Movie> findAll() {
         Session session = HibernateUtils.getCurrentSession();
         session.beginTransaction();
-        String hql = "FROM Movie";
-        Query query = session.createQuery(hql, Movie.class);
-        System.out.println("query" + query);
-        List<Movie> movies = query.getResultList();
+        List<Movie> movies = session.createQuery("SELECT a FROM movie a", Movie.class).getResultList();
+
         session.getTransaction().commit();
         return movies;
     }

@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89041eff-3575-4947-996e-f45d7d474908" name="Changes" comment="" />
+    <list default="true" id="89041eff-3575-4947-996e-f45d7d474908" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/MovieTypeId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/MovieTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/MovieTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/TypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/TypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieTypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieTypeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/TypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/TypeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/MovieType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/MovieType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/MovieDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/MovieTypeDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/TypeDaoTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,23 +31,54 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../orm.m.a201" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2cGsKXHwnnVcKvfuD5UHfA6P8H5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.MovieDaoTest.testFindAll.executor": "Run",
+    "JUnit.MovieDaoTest.testGetById.executor": "Run",
+    "JUnit.MovieDaoTest.testGetByIdNotExist.executor": "Run",
+    "JUnit.MovieDaoTest.testRemoveById.executor": "Run",
+    "JUnit.MovieDaoTest.testRemoveByIdNotExist.executor": "Run",
+    "JUnit.MovieDaoTest.testSave.executor": "Run",
+    "JUnit.MovieDaoTest.testSaveNotExist.executor": "Run",
+    "JUnit.MovieDaoTest.testUpdate.executor": "Run",
+    "JUnit.MovieDaoTest.testUpdateNotExist.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testFindAll.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testGetByIdNotExist.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testSave.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testSaveNotExist.executor": "Run",
+    "JUnit.TypeDaoTest.executor": "Run",
+    "JUnit.TypeDaoTest.testGetAll.executor": "Run",
+    "JUnit.TypeDaoTest.testGetById.executor": "Run",
+    "JUnit.TypeDaoTest.testGetByIdNotExist.executor": "Run",
+    "JUnit.TypeDaoTest.testRemoveById.executor": "Run",
+    "JUnit.TypeDaoTest.testRemoveByIdNotExist.executor": "Run",
+    "JUnit.TypeDaoTest.testSave.executor": "Run",
+    "JUnit.TypeDaoTest.testSaveNull.executor": "Run",
+    "JUnit.TypeDaoTest.testUpdate.executor": "Run",
+    "JUnit.TypeDaoTest.testUpdateNotExist.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/java_practice/hibernate/ThinhNV_ORM.M.A201/orm.m.a201/src/main/java/fa/training"
+    "last_opened_file_path": "D:/java_practice/hibernate/ThinhNV_ORM.M.A201/orm.m.a201/src/main/java/fa/training",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -42,6 +87,97 @@
       <recent name="D:\java_practice\hibernate\ThinhNV_ORM.M.A201\orm.m.a201\src\main\resources" />
       <recent name="D:\java_practice\hibernate\ThinhNV_ORM.M.A201\orm.m.a201\src\test\java\dao" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MovieTypeDaoTest.testFindAll">
+    <configuration name="MovieTypeDaoTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orm.m.a201." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTypeDaoTest.testGetByIdNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orm.m.a201." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
+      <option name="METHOD_NAME" value="testGetByIdNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTypeDaoTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orm.m.a201." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTypeDaoTest.testSaveNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orm.m.a201." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
+      <option name="METHOD_NAME" value="testSaveNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeDaoTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orm.m.a201." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.TypeDaoTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MovieTypeDaoTest.testFindAll" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testGetByIdNotExist" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testSaveNotExist" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testSave" />
+        <item itemvalue="JUnit.TypeDaoTest.testSave" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

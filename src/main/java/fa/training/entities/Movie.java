@@ -59,7 +59,8 @@ public class Movie {
     @Column(name = "small_image", columnDefinition = "varchar(255)", nullable = false)
     private String smallImage;
 
-    @OneToMany(mappedBy = "movie_id")
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ToString.Exclude
     private Set<MovieType> movieType;
 
 }

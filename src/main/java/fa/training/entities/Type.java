@@ -15,6 +15,7 @@ import java.util.Set;
 @Table(name = "type", schema = "MovieTheater")
 public class Type {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "type_id")
@@ -26,7 +27,13 @@ public class Type {
     @Column(name = "type_description", columnDefinition = "varchar(255)", nullable = false)
     private String typeDescription;
 
-    @OneToMany(mappedBy = "type")
+    @OneToMany(mappedBy = "type", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ToString.Exclude
     private Set<MovieType> movieType;
 
+    public Type(Integer id, String typeName, String typeDescription) {
+        this.id = id;
+        this.typeName = typeName;
+        this.typeDescription = typeDescription;
+    }
 }
