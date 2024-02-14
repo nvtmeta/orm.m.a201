@@ -2,6 +2,7 @@ package fa.training.dao.impl;
 
 import fa.training.dao.MovieTypeDao;
 import fa.training.entities.MovieType;
+import fa.training.entities.MovieTypeId;
 import fa.training.utils.HibernateUtils;
 import org.hibernate.Session;
 
@@ -28,10 +29,11 @@ public class MovieTypeDaoImpl implements MovieTypeDao {
     }
 
     @Override
-    public MovieType getById(Integer id) {
+    public MovieType getById(Integer movieId, Integer typeId) {
         Session session = HibernateUtils.getCurrentSession();
         session.beginTransaction();
-        MovieType movieType = session.get(MovieType.class, id);
+        MovieTypeId movieTypeId = new MovieTypeId(movieId, typeId);
+        MovieType movieType = session.get(MovieType.class, movieTypeId);
         session.getTransaction().commit();
         session.close();
         return movieType;
@@ -47,10 +49,11 @@ public class MovieTypeDaoImpl implements MovieTypeDao {
     }
 
     @Override
-    public void removeById(Integer id) {
+    public void removeById(Integer movieId, Integer typeId) {
         Session session = HibernateUtils.getCurrentSession();
         session.beginTransaction();
-        session.remove(session.get(MovieType.class, id));
+        MovieTypeId movieTypeId = new MovieTypeId(movieId, typeId);
+        session.remove(session.get(MovieType.class, movieTypeId));
         session.getTransaction().commit();
         session.close();
     }

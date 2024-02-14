@@ -107,8 +107,8 @@ public class MovieDaoTest {
 
     @Test
     public void testUpdate() {
-        Movie movie = movieDao.findAll().getFirst();
-
+//        Movie movie = movieDao.findAll().getFirst();
+        Movie movie = movieDao.getById(1);
         movie.setActor("Actor Updated");
         movieDao.update(movie);
 

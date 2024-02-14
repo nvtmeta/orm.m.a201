@@ -11,9 +11,9 @@ public interface MovieTypeDao {
 
     List<MovieType> findAll();
 
-    MovieType getById(Integer id);
+    MovieType getById(Integer movieId, Integer typeId);
 
     void update(MovieType movie);
 
-    void removeById(Integer id);
+    void removeById(Integer movieId, Integer typeId);
 }

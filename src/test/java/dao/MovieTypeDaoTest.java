@@ -1,11 +1,7 @@
 package dao;
 
-import fa.training.dao.MovieDao;
 import fa.training.dao.MovieTypeDao;
-import fa.training.dao.TypeDao;
-import fa.training.dao.impl.MovieDaoImpl;
 import fa.training.dao.impl.MovieTypeDaoImpl;
-import fa.training.dao.impl.TypeDaoImpl;
 import fa.training.entities.Movie;
 import fa.training.entities.MovieType;
 import fa.training.entities.MovieTypeId;
@@ -14,9 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -66,10 +60,10 @@ public class MovieTypeDaoTest {
         movieType.setMovie(movie);
         movieType.setType(type);
 
-//        movieTypeDao.save(movieType);
-//        System.out.println("movieType.getId()" + movieType.getId());
-//        MovieType movieType1 = movieTypeDao.getById();
-//        assertNotNull(movieType.getId());
+        movieTypeDao.save(movieType);
+
+        MovieType movieTypeSaved = movieTypeDao.getById(movie.getId(), type.getId());
+        assertNotNull(movieTypeSaved);
     }
 
     @Test
@@ -90,53 +84,51 @@ public class MovieTypeDaoTest {
 
     @Test
     public void testGetById() {
-        MovieType movieType = movieTypeDao.getById(1);
+        MovieType movieType = movieTypeDao.getById(1, 1);
         assertNotNull(movieType);
         assertEquals("Movie Type Description", movieType.getMtDescription());
     }
+
     @Test
     public void testGetByIdNotExist() {
-      MovieType movieType = movieTypeDao.getById(1000000000);
-      assertNull(movieType);
+        MovieType movieType = movieTypeDao.getById(1000000000, 10000000);
+        assertNull(movieType);
     }
-//
-//    @Test
-//    public void testUpdate() {
-//        Movie movie = movieDao.findAll().getFirst();
-//
-//        movie.setActor("Actor Updated");
-//        movieDao.update(movie);
-//
-//        System.out.println("movieDao.getById" + movieDao.getById(14));
-//
-//        assertEquals("Actor Updated", movieDao.getById(movie.getId()).getActor());
-//
-//    }
-//
-//    @Test
-//    public void testUpdateNotExist() {
-//        Movie movie = movieDao.getById(1000000000);
-//
-//        assertThrows(Exception.class, () -> {
-//            movie.setActor("Actor Updated");
-//            movieDao.update(movie);
-//        });
-//    }
-//
-//    @Test
-//    public void testRemoveById() {
-////        Movie movie = movieDao.findAll().getFirst();
-//        Movie movie = movieDao.getById(1);
-//
-//        movieDao.removeById(movie.getId());
-//        assertNull(movieDao.getById(movie.getId()));
-//    }
-//
-//    @Test
-//    public void testRemoveByIdNotExist() {
-//        Movie movie = movieDao.getById(1000000000);
-//        assertThrows(Exception.class, () -> movieDao.removeById(movie.getId()));
-//    }
+
+    @Test
+    public void testUpdate() {
+
+        MovieType movieType = movieTypeDao.getById(1, 1);
+        movieType.setMtDescription("Movie Type Description Updated");
+        movieTypeDao.update(movieType);
+        MovieType movieTypeUpdated = movieTypeDao.getById(1, 1);
+        assertEquals("Movie Type Description Updated", movieTypeUpdated.getMtDescription());
+    }
+
+    @Test
+    public void testUpdateNotExist() {
+        MovieType movieType = movieTypeDao.getById(1000000000, 10000000);
+
+        assertThrows(Exception.class, () -> {
+            movieType.setMtDescription("Movie Type Description Updated");
+            movieTypeDao.update(movieType);
+        });
+    }
+
+    @Test
+    public void testRemoveById() {
+
+        movieTypeDao.removeById(1, 1);
+        MovieType movieType = movieTypeDao.getById(1, 1);
+        assertNull(movieType);
+
+    }
+    @Test
+    public void testRemoveByIdNotExist() {
+        assertThrows(Exception.class, () -> {
+            movieTypeDao.removeById(1000000000, 10000000);
+        });
+    }
 
 
 }

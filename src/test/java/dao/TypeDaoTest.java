@@ -121,7 +121,8 @@ public class TypeDaoTest {
 
     @Test
     public void testUpdate() {
-        Type savedType = typeDao.findAll().getFirst();
+//        Type savedType = typeDao.findAll().getFirst();
+        Type savedType = typeDao.getById(1);
         savedType.setTypeDescription("Type Description Updated");
 
         typeDao.update(savedType);

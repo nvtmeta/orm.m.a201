@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89041eff-3575-4947-996e-f45d7d474908" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/MovieTypeId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../orm.m.a201/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/MovieTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/MovieTypeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/TypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/TypeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieTypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/MovieTypeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/TypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/dao/impl/TypeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/MovieType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/MovieType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/main/java/fa/training/entities/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/MovieDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/MovieTypeDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/TypeDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/MovieTypeDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orm.m.a201/src/test/java/dao/MovieTypeDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +51,14 @@
     "JUnit.MovieDaoTest.testUpdate.executor": "Run",
     "JUnit.MovieDaoTest.testUpdateNotExist.executor": "Run",
     "JUnit.MovieTypeDaoTest.testFindAll.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testGetById.executor": "Run",
     "JUnit.MovieTypeDaoTest.testGetByIdNotExist.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testRemoveById.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testRemoveByIdNotExist.executor": "Run",
     "JUnit.MovieTypeDaoTest.testSave.executor": "Run",
     "JUnit.MovieTypeDaoTest.testSaveNotExist.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testUpdate.executor": "Run",
+    "JUnit.MovieTypeDaoTest.testUpdateNotExist.executor": "Run",
     "JUnit.TypeDaoTest.executor": "Run",
     "JUnit.TypeDaoTest.testGetAll.executor": "Run",
     "JUnit.TypeDaoTest.testGetById.executor": "Run",
@@ -88,8 +84,8 @@
       <recent name="D:\java_practice\hibernate\ThinhNV_ORM.M.A201\orm.m.a201\src\test\java\dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTypeDaoTest.testFindAll">
-    <configuration name="MovieTypeDaoTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MovieTypeDaoTest.testRemoveById">
+    <configuration name="MovieTypeDaoTest.testGetById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orm.m.a201." />
       <extension name="coverage">
         <pattern>
@@ -99,13 +95,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
-      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="METHOD_NAME" value="testGetById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTypeDaoTest.testGetByIdNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTypeDaoTest.testRemoveById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orm.m.a201." />
       <extension name="coverage">
         <pattern>
@@ -115,13 +111,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
-      <option name="METHOD_NAME" value="testGetByIdNotExist" />
+      <option name="METHOD_NAME" value="testRemoveById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTypeDaoTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTypeDaoTest.testRemoveByIdNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orm.m.a201." />
       <extension name="coverage">
         <pattern>
@@ -131,13 +127,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
-      <option name="METHOD_NAME" value="testSave" />
+      <option name="METHOD_NAME" value="testRemoveByIdNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTypeDaoTest.testSaveNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTypeDaoTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orm.m.a201." />
       <extension name="coverage">
         <pattern>
@@ -147,13 +143,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
-      <option name="METHOD_NAME" value="testSaveNotExist" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypeDaoTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTypeDaoTest.testUpdateNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orm.m.a201." />
       <extension name="coverage">
         <pattern>
@@ -162,8 +158,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.TypeDaoTest" />
-      <option name="METHOD_NAME" value="testSave" />
+      <option name="MAIN_CLASS_NAME" value="dao.MovieTypeDaoTest" />
+      <option name="METHOD_NAME" value="testUpdateNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieTypeDaoTest.testFindAll" />
-        <item itemvalue="JUnit.MovieTypeDaoTest.testGetByIdNotExist" />
-        <item itemvalue="JUnit.MovieTypeDaoTest.testSaveNotExist" />
-        <item itemvalue="JUnit.MovieTypeDaoTest.testSave" />
-        <item itemvalue="JUnit.TypeDaoTest.testSave" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testRemoveById" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testRemoveByIdNotExist" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testUpdateNotExist" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testUpdate" />
+        <item itemvalue="JUnit.MovieTypeDaoTest.testGetById" />
       </list>
     </recent_temporary>
   </component>
